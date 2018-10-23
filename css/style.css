@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;/*ça bloque l'élément, le recentre et fait une marge*/
+}
+h1{
+    font-size:70px;
+    color:#2d288c;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+ }
+ 
+ h2{
+    font-size:50px;
+    color:#2d288c;
+    font-weight: bold;
+    font-family: 'Slabo', serif;
+    padding: 20px;
+ }
+ h3{
+     font-size: 22px;
+     color: #60ff1a;
+     padding: 15px;
+
+ }
+ h5{
+    font-size: 85px;
+    color:#60ff1a;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+ }
+ header{
+     background-color: #0b0d0a;
+ }
+ blockquote{
+     font-style: italic;
+     font-size: 120%;
+     color: #fff;
+ }
+ strong{
+     font-weight: bold;
+ }
+ main{
+     background-color: #0b0d0a;
+     width: 1000px;
+     margin: auto;
+ }
+ p{
+     color: #fff;
+ }
+aside{
+    height: 300px;
+}
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+footer{
+    background-color: #0b0d0a;
+    height: 30px
+}
+/*******************************/
+s
