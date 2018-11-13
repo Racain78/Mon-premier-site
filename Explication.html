@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explication</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="_blank"><img src="img/logo_360.png" alt="logo html css"></a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML / CSS</h1>
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="texte.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="position.html">Position</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="liste.html">Liste</a>
+        <a href="lien-menus.html">Lien & menus</a>
+        <a href="tableaux.html">Tableau</a>
+        <a href="formulaire.html">Formulaire</a>
+        <a href="multimedias.html">Multimedia</a>
+        <a href="animations.html">Animation</a>
+        <a href="fancy_box.html">Fancy Box</a>
+        <a href="Explication.html" class="activ">Explication</a>
+    </nav>
+    <main><!--Main -- Contenu principal de la page-->
+        <section>
+            <h3><mark>Les FigCaption</mark></h3>
+            <div class="texte">
+                <p>
+                    -1 Un navigateur n'implémentant pas ces éléments affichera le contenu au format brut, sans présentation particulière. Par défaut, le style appliqué est <strong><u>display:block</u></strong> sur les deux éléments, ainsi que des marges sur <strong>figure</strong>
+                </p>
+                <br>
+                <p>
+                    -2 Application sur le web
+                    Utilisation sans légende il est tout à fait envisageable d'insérer <strong> "figcaption"</strong> avant l'image voire de ne pas le mettre du tout car il est facultatif.
+
+                    <figure>
+                        <img src="img/Sylvanas.jpg" alt="Proposition pour le thème : Sylvanas Coursevent" />
+                    </figure>
+                    Les différents éléments peuvent être stylés en CSS
+                </p>
+                <p>
+                    3- Utilisation image avec sa légende
+                    Dans son usage le plus courant, l'élément <strong>"figure"</strong> contient dans une image puis sa légende <strong>"figcaption"</strong>.
+
+                    <figure>
+                        <img src="img/Sylvanas.jpg" alt="">
+                        <figcaption>Proposition pour le thème : <br><em>Sylvanas</em></a></figcaption>
+                    </figure>
+
+                </p>
+                <p>
+                    4- Utilisation avancée 
+                    Il est prévu de pouvoir regrouper une liste d'images et ainsi les lier à l'aide d'un unique élément <strong>"figcaption"</strong>.
+
+                    une liste d'images
+                    <figure>
+                        <img src="img/Vanilla.jfif" alt="" width="181" height="242">
+                        <img src="img/Bc.jpg" alt="" width="181" height="242">
+                        <img src="img/Wotk.jpg" alt="" width="181" height="242">
+                        <figcaption>World Of Warcraft . Meilleur MMORPG de tout les temps.</figcaption>
+                    </figure>
+                </p>
+                <br>
+                <p>
+                    5- Un bloc de code
+                    Les illustration ne sont pas les seuls éléments HTML à pouvoir profiter description <strong>"figure"</strong> et <strong>"figcaption"</strong>. On peut également les appliquer à un bloc de code source.
+
+                    <figure>
+                        <pre>
+                            <code>
+                                <!-- Le code source à exposer-->
+                            </code>
+                        </pre>
+                        <figcaption>Description su code source présenté</figcaption>
+                    </figure>
+                </p>
+                <p>
+                    6- Une vidéo
+                    Le même principe est appliqué à la balise <strong>"vidéo"</strong>.
+
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IBHL_-biMrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption>Description de la vidéo</figcaption>
+                        </figure>
+                        Les diagrammes et autres graphes dynamiques
+                        Du côté de <mark>Canvas et SVG</mark>, le document peut également en profiter. HTML5 ne compte pas que <strong>"figure"</strong> et
+                        <strong>"figcaption"</strong> dans ses nouveaux éléments mais également <strong>"canvas"</strong>, qui vous permettra de créer, en association avec JavaScript, des diagrammes, des graphiques, et tout ce qu'une surface de dessin permet de faire. A ce sujet, consultez l'article de David Rousset : Introduction aux APIs graphiquesd'HTML5 : SVG & Canvas
+
+                        Choisir <strong>"figure"</strong> ou <strong>"aside"</strong> ?
+                        Ces deux éléments sont des untités de contenu mais n'ont pas le même rôle sémantique. Tandis qu'<strong>"aside"</strong> n'est pas essentiel pour la compréhension de la page
+                        (il ne doit être qu'un apport tangentiel), <strong>"figure"</strong> est lié à celui-ci : il transmet un contenu pertinent, lié au contenu principal, comme le serait une images classique.
+
+                    <br><br>
+                            Nous pouvons donc résumer la chose comme suit :<br>
+
+                            <strong><mark>"aside"</mark></strong> : son contenu est périphériques à la page, et son absence ne doit pas gêner la compréhension de celle-ci.<br>
+                            <strong><mark>"figure"</mark></strong> : son contenu contribue à donner du sens et de la compréhensible à la page, et son placement n'est pas determinant.
+                </p>
+                <br>
+                <mark>Illustration légendée</mark>
+                Inaugurés avec HTML5, les éléments <strong>"figure"<strong> et <strong>"figcaption"</strong> fonctionnent de concert pour associer une légende à une illustration ou un autre élément média.
+
+                <figure>
+                    <img src="img/Bc.jpg" alt="">
+                    <figcaption>WoW</figcaption>
+                </figure>
+                Elements <strong><mark>figure</mark></strong> est une unité de contenu, c'est à dire que cet élément sert de conteneur dans lequel s'incèrent divers éléments comme des images, des schémas, des vidéos, des tableaux ou encore des blocs de code.
+                L"objectif est de lier ce contenu à une légende, définie par l'élément <mark>figcaption</mark> (facultatif).
+                <br>
+                <br>
+                Elément <strong>figcaption</strong> <br>
+                    Enfant direct de <strong>figure</strong>, son rôle est de légender son parent, sous forme de texte et/ou de liens. Il peut de placer avant ou après le contenu principal de <mark>figure</mark>.
+
+        </section>
+    </main>
+    <a href=""><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+    <!--Footer-->
+    <footer>
+        <!-- Zone du bas, ex : les liens administratifs, mention légales, plan du site. -->
+
+    </footer>
+</body>
+</html>

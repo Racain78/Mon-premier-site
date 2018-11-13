@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ma page Structure</title>
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
     
 </head>
 <body>
@@ -33,19 +33,57 @@
         <a href="position.html" class="activ">Position</a>
         <a href="zoning.html" class="activ">Zoning</a>
         <a href="liste.html" class="activ">Liste</a>
-        <a href="lien_menus.html" class="activ">Lien & menus</a>
+        <a href="lien-menus.html" class="activ">Lien & menus</a>
         <a href="tableaux.html" class="activ">Tableau</a>
         <a href="formulaire.html" class="activ">Formulaire</a>
         <a href="multimedias.html" class="activ">Multimedia</a>
         <a href="animations.html" class="activ">Animation</a>
         <a href="fancy_box.html" class="activ">Fancy Box</a>
+        <a href="Explication.html" class="activ">Explication</a>
     </nav>
     <main><!--Main -- Contenu principal de la page-->
+        <h2>Formulaire</h2>
+        <section class="formulaire">
+        <form method="post" action="url de destination" enctype="multipart/form-data">
+            <label for="pseudo">Pseudo* </label>
+            <input type="text" id="pseudo"name="pseudo"required><br/><br/>
 
-        <aside><!-- Contenu secondaire-->
-            <marquee direction="left" behavior="scroll" scrollamount="10"><h5>Session poissy 2018/2019</h5></marquee>
-            <marquee direction="right" behavior="scroll" scrollamount="6"><h5>Voici mon 1er site</h5></marquee>
-        </aside>
+            <label for="prenom"> Prénom</label>
+            <input type="text" id="prenom"name="prenom" placeholder="Votre Prénom"required><br/><br/>
+
+            <label for="MDP"> Mot de passe</label>
+            <input type="password" id="mdp"name="MDP" placeholder=""required><br/><br/>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email"name="email"><br/><br/>
+
+            <label for="cv">CV</label>
+            <input type="file" id="cv"name="cv"><br/><br/>
+
+            <p>Quels sont vos fruits préférés ?</p>
+            <!-- <label type="checkbox" name="question">Orange</label>
+            <input type="checkbox" id="orange" value="orange" checked> -->
+
+            <label type="checkbox" name="question"></label>
+
+            <label for="orange">orange</label>
+            <input type="checkbox" id="orange" value="orange">
+
+            <label for="fraise">Fraise</label>
+            <input type="checkbox" id="fraise" value="fraise">
+
+            <label for="mangue">Mangue</label>
+            <input type="checkbox" id="mangue" value="mangue"><br>
+
+            <label for="cp">Code postale </label>
+            <input type="text" id="cp"name="cp" max-length="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"><br/><br/>
+
+
+            <label for="message">Message </label>
+            <textarea id="message"rows="6" cols="30"></textarea><br>
+            <input type="submit" name="inscription" value="Envoyer">
+            <input type="reset" name="annuler" value="Annuler">
+        </form>   
     </main>
     <a href=""><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
     <!--Footer-->

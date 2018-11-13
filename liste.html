@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ma page Structure</title>
+    <title>Liste</title>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
@@ -26,26 +26,66 @@
         <div class="clear"></div>
     </header>
     <nav>
-        <a href="index.html" class="activ">Index</a>
-        <a href="texte.html" class="activ">Texte</a>
-        <a href="selecteurs.html" class="activ">Selecteurs</a>
-        <a href="images.html" class="activ">Images</a>
-        <a href="position.html" class="activ">Position</a>
-        <a href="zoning.html" class="activ">Zoning</a>
+        <a href="index.html" >Index</a>
+        <a href="texte.html" >Texte</a>
+        <a href="selecteurs.html" >Selecteurs</a>
+        <a href="images.html" >Images</a>
+        <a href="position.html" >Position</a>
+        <a href="zoning.html" >Zoning</a>
         <a href="liste.html" class="activ">Liste</a>
-        <a href="lien_menus.html" class="activ">Lien & menus</a>
-        <a href="tableaux.html" class="activ">Tableau</a>
-        <a href="formulaire.html" class="activ">Formulaire</a>
-        <a href="multimedias.html" class="activ">Multimedia</a>
-        <a href="animations.html" class="activ">Animation</a>
-        <a href="fancy_box.html" class="activ">Fancy Box</a>
+        <a href="lien-menus.html" >Lien & menus</a>
+        <a href="tableaux.html" >Tableau</a>
+        <a href="formulaire.html" >Formulaire</a>
+        <a href="multimedias.html" >Multimedia</a>
+        <a href="animations.html" >Animation</a>
+        <a href="fancy_box.html" >Fancy Box</a>
+        <a href="Explication.html">Explication</a>
     </nav>
     <main><!--Main -- Contenu principal de la page-->
-
-        <aside><!-- Contenu secondaire-->
-            <marquee direction="left" behavior="scroll" scrollamount="10"><h5>Session poissy 2018/2019</h5></marquee>
-            <marquee direction="right" behavior="scroll" scrollamount="6"><h5>Voici mon 1er site</h5></marquee>
-        </aside>
+        <h2>Les listes</h2>
+            <section class="nonOrdonnee">
+                <h3>Les listes ul : non ordonnées</h3>
+                <ul class="fruit">
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Fraise</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Banane</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Mangue</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Listes imbriquées</h3>
+                <ul class="imbriquee">
+                    <li class="eu"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Europe</span>
+                        <ul>
+                            <li>Angleterre</li>
+                            <li>Islande</li>
+                            <li>Suède</li>
+                        </ul>
+                    </li>
+                    <li class="asie"><i class="fa fa-arrow-right" aria-hidden="true"></i> <span>Asie</span>
+                        <ul>
+                            <li>Malaisie</li>
+                            <li>Japon</li>
+                            <li>Indonésie</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Listes ol : ordonnées</h3>
+                <ol>
+                    <li>Html / Css</li>
+                    <li>PHP / SQL</li>
+                    <li>JS / JQUERY</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Listes de définition</h3>
+                <dl>
+                    <dt>F</dt>
+                    <dd>France</dd>
+                    <dd>Finlande</dd>
+                </dl>
+            </section>²
     </main>
     <a href=""><button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
     <!--Footer-->
